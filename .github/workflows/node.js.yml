@@ -13,7 +13,7 @@ jobs:
     - name: Use Node.js 18
       uses: actions/setup-node@v3
       with:
-        node-version:18
+        node-version: 18
     - name: branch name  
       run: echo running on branch ${GITHUB_REF##*/}
     - name: run ci
