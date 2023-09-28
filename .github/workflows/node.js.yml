@@ -16,8 +16,8 @@ jobs:
         node-version: 18
     - name: branch name  
       run: echo running on branch ${GITHUB_REF##*/}
-    - name: run ci
-      run: cd $(echo "${GITHUB_REF##*/}") && npm ci
+    - name: Install Dependencies
+      run: cd $(echo "${GITHUB_REF##*/}") && npm install
     - name: build
       run: cd $(echo "${GITHUB_REF##*/}") && npm run build --if-present
     - name: run test
