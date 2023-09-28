@@ -16,7 +16,7 @@ jobs:
     - name: Use Node.js 12
       uses: actions/checkout@v2
       with:
-        node-version:  Use Node.js 12
+        node-version: 12
     - name: branch name  
       run: echo running on branch ${GITHUB_REF##*/}
     - name: run ci
